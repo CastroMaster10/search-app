@@ -1,23 +1,46 @@
 import React from 'react';
-import Product from '../components/Product';
 import { Button } from "react-bootstrap";
-import Ratings from '../components/Ratings';
+import Products from '../components/Products';
+import Jumbotron from '../components/Jumbotron';
+
+
+
 
 function App() {
   
-  const isValid = true
+
+
+
 
   return (
     <div className="App">
-      <Product />
-      <Button variant="warning" disabled= {!isValid} > Submit  </Button>
-      <Ratings rating= "1"/>
-      <Ratings rating= "2"/>
-      <Ratings rating= "3"/>
-      <Ratings rating= "4"/>
-      <Ratings rating= "5"/>
+
+      {/* <Button variant="warning" onClick = {() => document.body.style.backgroundColor !== 'black' ?
+      changeBackgroundToBlack() && changeFontToWhite(): changeBackgroundToWhite() && changeFontToBlack()} > Change Background </Button>
+      <Products/> */}
+
+        <Jumbotron>
+          hola como estas
+        </Jumbotron>
     </div>
   );
 }
+
+
+const changeBackgroundToBlack = () => {
+
+  return document.body.style.backgroundColor = 'black'
+}
+const changeFontToBlack = () => {
+
+  return document.body.style.color = 'black'
+}
+
+const changeBackgroundToWhite = () => {
+  return document.body.style.backgroundColor = "white"
+}
+const changeFontToWhite = () => {
+  return document.body.style.color = "white"
+} 
 
 export default App;
