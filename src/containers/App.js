@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from "react-bootstrap";
 import Products from '../components/Products';
 import Jumbotron from '../components/Jumbotron';
+import UserForm from '../components/UserForm';
 
 
 
@@ -19,9 +20,10 @@ function App() {
       changeBackgroundToBlack() && changeFontToWhite(): changeBackgroundToWhite() && changeFontToBlack()} > Change Background </Button>
       <Products/> */}
 
-        <Jumbotron>
+        {/* <Jumbotron>
           hola como estas
-        </Jumbotron>
+        </Jumbotron> */}
+        <UserForm/>
     </div>
   );
 }
