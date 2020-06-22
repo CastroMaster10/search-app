@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import Products from '../components/Products';
 import Jumbotron from '../components/Jumbotron';
 import UserForm from '../components/UserForm';
-
+import GithubApi from '../components/GithubApi';
 
 
 
@@ -18,12 +18,13 @@ function App() {
 
       {/* <Button variant="warning" onClick = {() => document.body.style.backgroundColor !== 'black' ?
       changeBackgroundToBlack() && changeFontToWhite(): changeBackgroundToWhite() && changeFontToBlack()} > Change Background </Button>
-      <Products/> */}
+      <Products/>
 
-        {/* <Jumbotron>
+        <Jumbotron>
           hola como estas
-        </Jumbotron> */}
-        <UserForm/>
+        </Jumbotron>
+        <UserForm/> */}
+        <GithubApi/>
     </div>
   );
 }

@@ -13,7 +13,7 @@ const Product = (props) => {
 
     return (
       <div style= {styles.starStyles} >
-        <h1>Rating: {props.rating}</h1>
+        
         {rating >= 1 ? (
           <IoIosStar onClick={() => setRating(1)} />
         ) : (
@@ -39,7 +39,7 @@ const Product = (props) => {
         ) : (
           <IoIosStarOutline onClick={() => setRating(5)} />
         )}
-        {props.numOfReviews}
+        {/* {props.numOfReviews} */}
       </div>
     );
 }

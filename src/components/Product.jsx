@@ -2,6 +2,7 @@ import React from 'react';
 import Ratings from './Ratings';
 import {Media} from 'react-bootstrap';
 
+
 const Product = (props) => {
     return(
         <div>
